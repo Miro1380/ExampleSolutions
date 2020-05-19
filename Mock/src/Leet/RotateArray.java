@@ -30,7 +30,7 @@ public class RotateArray {
             }
         }
     } */
-//Easier but accepeted method ?? O(n) space and time.
+//Easier but accepted method ?? O(n) space and time.
     public void rotate(int[] nums, int k) {
         //Create new array the same size as 'nums.'
         int[] rotated = new int[nums.length];

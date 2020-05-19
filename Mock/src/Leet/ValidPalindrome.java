@@ -14,13 +14,12 @@ public class ValidPalindrome {
         //Expected false
         System.out.println(sol.isPalindrome(s2));
 
-        //Ex
+        //Expected true
         System.out.println(sol.isPalindrome(s3));
 
     }
 
     //65-> 'A' 90-> 'Z' , 97->'a'  122-> 'z'
-    //If a space, non alphanumeric, skip to next. Add 1 to index/pointer ??
     public boolean isPalindrome(String s){
         boolean isValid = true;
         String str = s.toLowerCase();
@@ -30,14 +29,13 @@ public class ValidPalindrome {
 
         if(replace.equals("")) return true;
 
-
         while(isValid){
             //If characters at opposite ends match
             if(replace.charAt(lSide) != replace.charAt(rSide)){
                 return false;
             }
 
-            //If rCounter gets to left side(zero)
+            //If rCounter gets to left side(zero).
             if(rSide == 0 ){
                 break;
             }
