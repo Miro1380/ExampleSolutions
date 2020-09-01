@@ -32,7 +32,7 @@ public class GreatestCandyCount {
                 max = n;
             }
         }
-        System.out.println("Pre extra max: "+ max);
+        //System.out.println("Pre extra max: "+ max);
 
         //Check if current kid with extra candy would beat the current max.
         for(int n: candies){

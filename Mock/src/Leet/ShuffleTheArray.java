@@ -31,8 +31,9 @@ public class ShuffleTheArray {
 
 
         //Turn Integer[] to int[] -> https://stackoverflow.com/questions/31394715/how-to-convert-integer-to-int-array-in-java
-        shuffled = Arrays.stream(deque.toArray(new Integer[0])).mapToInt(Integer::intValue).toArray();
+        shuffled = Arrays.stream(deque.toArray(new Integer[0])).mapToInt(i->i).toArray();
 
+        System.out.println(Arrays.toString(shuffled));
         return shuffled;
     }
 }
