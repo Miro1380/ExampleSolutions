@@ -1,9 +1,6 @@
 package Leet;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
 
 public class TwoSum {
     public static void main (String[]args){
