@@ -22,7 +22,7 @@ public class RunLengthEncoding {
 
             //Check if character changes or is max of 9. Reset length to 0.
             if((curCharacter != prevCharacter) || length == 9){
-                encoded.append(Integer.toString(length));
+                encoded.append(length);
                 encoded.append(prevCharacter);
                 length = 0;
             }
@@ -31,7 +31,7 @@ public class RunLengthEncoding {
         }
 
         //Last run case
-        encoded.append(Integer.toString(length));
+        encoded.append(length);
         encoded.append(string.charAt(string.length()-1));
 
         System.out.println(encoded);
