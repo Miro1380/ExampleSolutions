@@ -25,6 +25,7 @@ public class LongestPeak {
                 continue;
             }
 
+            //Count left and right from peak.
             int lIndex = i-2;
             int rIndex = i+2;
             while(lIndex>= 0 && array[lIndex] < array[lIndex+1]){
@@ -34,7 +35,9 @@ public class LongestPeak {
                 rIndex +=1;
             }
             currentPeak = rIndex - lIndex -1;
-            if(current> maxPeak){
+
+            //Check if the currentPeak is larger than current max.
+            if(currentPeak> maxPeak){
                 maxPeak = currentPeak;
             }
             i = rIndex;
